@@ -1,0 +1,478 @@
+<?xml version="1.0" ?>
+<enemy>
+    <behaviour>
+        <root x="110" y="40">
+            <normal>
+                <andblock>
+                    <normal>
+                        <condition id="checkCounter">
+                            <string id="id">shopCounter</string>
+                            <string id="value">20</string>
+                            <string id="compare method" values="valuecompare">less</string>
+                            <normal>
+                                <action id="setBool">
+                                    <string id="id">DontMove</string>
+                                    <string id="value" values="flagtoggle">yes</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <action id="adjustCounter">
+                            <string id="id">shopCounter</string>
+                            <string id="value">1</string>
+                            <string id="adjust method" values="valueadjust">add</string>
+                        </action>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleFrost</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleFrost</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleFrost</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleAimed</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleAimed</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleAimed</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleShotSpread1</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleShotSpread1</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleShotSpread1</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleShotDamage1</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleShotDamage1</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleShotDamage1</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleShotDamage2</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleShotDamage2</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleShotDamage2</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleShotDamage3</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleShotDamage3</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleShotDamage3</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleShotSplit1</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleShotSplit1</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleShotSplit1</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleFrostDamage1</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleFrostDamage1</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleFrostDamage1</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleFrostDamage2</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleFrostDamage2</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleFrostDamage2</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleFrostSlow1</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleFrostSlow1</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleFrostSlow1</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleFrostSlow2</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleFrostSlow2</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleFrostSlow2</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleFrostSlow3</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleFrostSlow3</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleFrostSlow3</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleFrostDuration1</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleFrostDuration1</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleFrostDuration1</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleAimedDamage1</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleAimedDamage1</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleAimedDamage1</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleAimedDamage2</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleAimedDamage2</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleAimedDamage2</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleAimedDamage3</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleAimedDamage3</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleAimedDamage3</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleAimedSize1</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleAimedSize1</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleAimedSize1</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleAimedSpeedup1</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleAimedSpeedup1</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleAimedSpeedup1</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleAimedSpeedup2</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleAimedSpeedup2</string>
+                                    <string id="Minimized">yes</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleAimedSpeedup2</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">wozzleSpeed1</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">wozzleSpeed1</string>
+                                    <string id="Minimized">yes</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">wozzleSpeed1</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">healthRegen1</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">healthRegen1</string>
+                                    <string id="Minimized">yes</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">healthRegen1</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">healthRegen2</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">healthRegen2</string>
+                                    <string id="Minimized">yes</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">healthRegen2</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">addHealth1</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">addHealth1</string>
+                                    <string id="Minimized">yes</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">addHealth1</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">addHealth2</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">addHealth2</string>
+                                    <string id="Minimized">yes</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">addHealth2</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                        <andblock>
+                            <normal>
+                                <action id="buyUpgrade">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">addHealth3</string>
+                                </action>
+                            </normal>
+                            <or>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">no</string>
+                                    <string id="upgrade name">addHealth3</string>
+                                </condition>
+                                <condition id="canPayUpgrade">
+                                    <string id="upgrade name">addHealth3</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                    </normal>
+                    <else>
+                        <action id="adjustCounter">
+                            <string id="id">shopCounter</string>
+                            <string id="value">0</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                    </else>
+                    <or>
+                        <condition id="isInNamedArea">
+                            <string id="area name">healArea</string>
+                            <string id="team" values="ownenemy">OWN_TEAM</string>
+                            <string id="who" values="targetself">self</string>
+                        </condition>
+                        <condition id="getBoolEquals">
+                            <string id="id">canBuyItems</string>
+                            <string id="value" values="yesno">yes</string>
+                        </condition>
+                    </or>
+                </andblock>
+            </normal>
+        </root>
+    </behaviour>
+</enemy>
